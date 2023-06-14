@@ -1,0 +1,8 @@
+<h1>Home Page</h1>
+<h3>{{ user }}</h3>
+
+{% for post in object_list %}
+    <p>{{ post.profile.username }}</p>
+    <p>{{ post.created_at }}</p>
+    <img src="{{ post.image.url }}" alt="">
+{% endfor %}
