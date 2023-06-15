@@ -20,8 +20,15 @@
             {% endif %}
         </div>
         <div class="create-search">
-            <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'create post page' %}"><i class="fa-regular fa-square-plus"></i></a>
+            {% endif %}
             <input type="text" placeholder="Search...">
+            {% if current_profile %}
+                <a href="{% url 'profile details page' profile_pk=current_profile.pk %}"><img class="nav-profile-image" src="/media/{{ current_profile.image }}" alt=""></a>
+            {% else %}
+                <a href="{% url 'profile details page' profile_pk=current_profile.pk %}"><img class="nav-profile-image" src="{% static 'images/default-user.png' %}" alt=""></a>
+            {% endif %}
         </div>
     </nav>
 

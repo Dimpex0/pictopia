@@ -1,6 +1,7 @@
 from django.db import models
 
 from pictopia.account.models import Profile
+from pictopia.post.validators import image_size_validation
 
 
 class Post(models.Model):
@@ -13,7 +14,10 @@ class Post(models.Model):
     image = models.ImageField(
         upload_to='posts',
         null=True,
-        blank=True
+        blank=True,
+        validators=[
+            image_size_validation
+        ]
     )
     description = models.TextField(
         null=True,

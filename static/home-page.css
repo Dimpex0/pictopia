@@ -53,6 +53,12 @@
     display: block;
     height: 300px;
     object-fit: cover;
-    margin: auto auto 16px;
+    margin: auto;
+}
+
+.post-description {
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 16px;
 }
 

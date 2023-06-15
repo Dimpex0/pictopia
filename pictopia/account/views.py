@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model, logout
 from django.contrib.auth import views as auth_views
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import redirect
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 from django.views import generic as views
 
 from pictopia.account.forms import ClientRegisterForm
@@ -41,7 +41,7 @@ class ProfileDetailsView(views.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['posts'] = Post.objects.filter(profile=self.get_object())
+        context['posts'] = Post.objects.filter(profile=self.get_object()).order_by('-created_at')
         return context
 
     def get_object(self, queryset=None):
@@ -52,6 +52,9 @@ class ProfileEditView(LoginRequiredMixin, views.UpdateView):
     model = Profile
     fields = '__all__'
     template_name = 'account/edit.html'
+
+    def get_success_url(self):
+        return reverse('profile details page', kwargs={'profile_pk': self.get_object().pk})
 
     def get_object(self, queryset=None):
         return Profile.objects.get(client=self.request.user)
