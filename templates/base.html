@@ -15,7 +15,7 @@
         <div class="logo-profile">
             <a id="logo" href="{% url 'home page' %}">Pictopia</a>
             {% if user.is_authenticated %}
-                <a class="nav-a" href="{% url 'profile details page' profile_pk=user.pk %}">Profile</a>
+                <a class="nav-a" href="{% url 'profile details page' profile_pk=current_profile.pk %}">Profile</a>
                 <a class="nav-a" href="{% url 'logout' %}">Logout</a>
             {% endif %}
         </div>
@@ -26,8 +26,6 @@
             <input type="text" placeholder="Search...">
             {% if current_profile %}
                 <a href="{% url 'profile details page' profile_pk=current_profile.pk %}"><img class="nav-profile-image" src="/media/{{ current_profile.image }}" alt=""></a>
-            {% else %}
-                <a href="{% url 'profile details page' profile_pk=current_profile.pk %}"><img class="nav-profile-image" src="{% static 'images/default-user.png' %}" alt=""></a>
             {% endif %}
         </div>
     </nav>
