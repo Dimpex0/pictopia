@@ -1,0 +1,5 @@
+<form method="POST" action="{% url 'client login page' %}">
+    {{ form.as_div }}
+    <button>Login</button>
+    {% csrf_token %}
+</form>

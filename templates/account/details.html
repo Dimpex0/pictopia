@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Pictopia | {{ object.username }}{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'home-page.css' %}">
+    <link rel="stylesheet" href="{% static 'style/account/details.css' %}">
+{% endblock %}
+
+{% block page_content %}
+
+    <div class="page-container">
+        <div class="profile-container">
+            {% if object.image %}
+                <img class="profile-image" src="/media/{{ object.image }}" alt="">
+            {% else %}
+                <img class="no-profile-image" src="{% static 'images/default-user.png' %}" alt="">
+            {% endif %}
+            <div class="profile-info">
+                <p class="profile-username">{{ object.username }}</p>
+                <p class="profile-names">{{ object.full_name }}</p>
+                {% if object.description %}
+                    <p style="font-weight: 500; margin: 0">Bio:</p>
+                    <p class="profile-description">{{ object.description }}</p>
+                {% endif %}
+            </div>
+            {% if object.client == user %}
+                <div class="edit-icon">
+                    <a href="{% url 'profile edit page' %}"><i class="fa-solid fa-pencil"></i></a>
+                </div>
+            {% endif %}
+        </div>
+        <div class="posts-container">
+            {% for post in posts %}
+                <div class="post-container">
+                    <div class="post-info">
+                        <div class="post-user-data">
+                            {% if post.profile.image %}
+                                <img src="/media/{{ post.profile.image }}" alt="">
+                            {% else %}
+                                <img class="no-img" src="{% static 'images/default-user.png' %}" alt="">
+                            {% endif %}
+                            <a class="post-username" href="{% url 'profile details page' profile_pk=post.profile.pk %}">{{ post.profile.username }}</a>
+                        </div>
+                        <p class="post-date">{{ post.created_at }}</p>
+                    </div>
+                    {% if post.image and not post.description %}
+                        <img class="post-image" src="/media/{{ post.image }}" alt="">
+                    {% elif post.description and not post.image %}
+                        <p class="post-description">{{ post.description }}</p>
+                    {% else %}
+                        <img class="post-image" src="/media/{{ post.image }}" alt="">
+                        <p class="post-description">{{ post.description }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
