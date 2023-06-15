@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
 from django.views import generic as views
 
 from pictopia.account.models import Profile
@@ -23,6 +24,7 @@ class CreatePostView(LoginRequiredMixin, views.CreateView):
     model = Post
     form_class = CreatePostForm
     template_name = 'post/create-post-page.html'
+    success_url = reverse_lazy('home page')
 
     def get_form_kwargs(self):
         kwargs = super(CreatePostView, self).get_form_kwargs()

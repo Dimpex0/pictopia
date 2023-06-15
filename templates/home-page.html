@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load customs %}
 {% block style %}
     <link rel="stylesheet" href="{% static 'home-page.css' %}">
 {% endblock %}
@@ -18,7 +19,7 @@
                         {% endif %}
                         <a class="post-username" href="{% url 'profile details page' profile_pk=post.profile.pk %}">{{ post.profile.username }}</a>
                     </div>
-                    <p class="post-date">{{ post.created_at }}</p>
+                    <p class="post-date">{{ post.created_at|postedTime }}</p>
                 </div>
                 {% if post.image and not post.description %}
                     <img class="post-image" src="/media/{{ post.image }}" alt="">
