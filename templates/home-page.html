@@ -1,8 +1,36 @@
-<h1>Home Page</h1>
-<h3>{{ user }}</h3>
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'home-page.css' %}">
+{% endblock %}
+{% block page_content %}
 
-{% for post in object_list %}
-    <p>{{ post.profile.username }}</p>
-    <p>{{ post.created_at }}</p>
-    <img src="{{ post.image.url }}" alt="">
-{% endfor %}
+    <div class="page-container">
+
+        {% for post in object_list %}
+            <div class="post-container">
+                <div class="post-info">
+                    <div class="post-user-data">
+                        {% if post.profile.image %}
+                            <img src="/media/{{ post.profile.image }}" alt="">
+                        {% else %}
+                            <img class="no-img" src="{% static 'images/default-user.png' %}" alt="">
+                        {% endif %}
+                        <a class="post-username" href="{% url 'profile details page' profile_pk=post.profile.pk %}">{{ post.profile.username }}</a>
+                    </div>
+                    <p class="post-date">{{ post.created_at }}</p>
+                </div>
+                {% if post.image and not post.description %}
+                    <img class="post-image" src="/media/{{ post.image }}" alt="">
+                {% elif post.description and not post.image %}
+                    <p class="post-description">{{ post.description }}</p>
+                {% else %}
+                    <img class="post-image" src="/media/{{ post.image }}" alt="">
+                    <p class="post-description">{{ post.description }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

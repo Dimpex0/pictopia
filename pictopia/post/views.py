@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views import generic as views
 
 from pictopia.post.models import Post

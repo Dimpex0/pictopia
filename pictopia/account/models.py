@@ -66,6 +66,11 @@ class Profile(models.Model):
         null=True,
         blank=True,
     )
+    description = models.CharField(
+        max_length=150,
+        null=True,
+        blank=True,
+    )
     client = models.OneToOneField(
         Client,
         on_delete=models.CASCADE,
@@ -73,6 +78,17 @@ class Profile(models.Model):
         null=False,
         blank=False
     )
+
+    @property
+    def full_name(self):
+        if self.first_name and self.last_name:
+            return self.first_name + ' ' + self.last_name
+        elif self.first_name and not self.last_name:
+            return self.first_name
+        elif self.last_name and not self.first_name:
+            return self.last_name
+        else:
+            return ''
 
     def __str__(self):
         return self.email

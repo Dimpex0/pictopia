@@ -1,0 +1,52 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+    background-color: #a1b08d;
+    margin-bottom: 30px;
+}
+
+.logo-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.create-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+#logo {
+    font-size: 42px;
+    font-weight: 400;
+    color: black;
+    text-decoration: unset;
+    margin-right: 20px;
+}
+
+.nav-a {
+    font-size: 26px;
+    text-decoration: unset;
+    color: #1f2f2a;
+}
+
+.nav-a:hover {
+    transition: 200ms;
+    color: lightgrey;
+}
+
+.fa-regular.fa-square-plus {
+    font-size: 35px;
+    color: #1f2f2a;
+    padding-top: 2px;
+}
+
+.fa-regular.fa-square-plus:hover {
+    transition: 200ms;
+    color: lightgrey;
+}

@@ -17,7 +17,7 @@ class Post(models.Model):
     )
     description = models.TextField(
         null=True,
-        blank=True
+        blank=True,
     )
     created_at = models.DateTimeField(
         auto_now_add=True
