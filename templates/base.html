@@ -24,8 +24,10 @@
                 <a href="{% url 'create post page' %}"><i class="fa-regular fa-square-plus"></i></a>
             {% endif %}
             <input type="text" placeholder="Search...">
-            {% if current_profile %}
+            {% if user.is_authenticated and current_profile.image %}
                 <a href="{% url 'profile details page' profile_pk=current_profile.pk %}"><img class="nav-profile-image" src="/media/{{ current_profile.image }}" alt=""></a>
+            {% elif user.is_authenticated and not current_profile.image %}
+                <a href="{% url 'profile details page' profile_pk=current_profile.pk %}"><img class="nav-profile-image" src="{% static 'images/default-user.png' %}" alt=""></a>
             {% endif %}
         </div>
     </nav>
