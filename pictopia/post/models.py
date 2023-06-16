@@ -13,8 +13,8 @@ class Post(models.Model):
     )
     image = models.ImageField(
         upload_to='posts',
-        null=True,
-        blank=True,
+        null=False,
+        blank=False,
         validators=[
             image_size_validation
         ]

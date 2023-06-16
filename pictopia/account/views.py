@@ -5,7 +5,7 @@ from django.shortcuts import redirect
 from django.urls import reverse_lazy, reverse
 from django.views import generic as views
 
-from pictopia.account.forms import ClientRegisterForm
+from pictopia.account.forms import ClientRegisterForm, ProfileEditForm
 from pictopia.account.models import Profile
 from pictopia.post.models import Post
 
@@ -51,7 +51,7 @@ class ProfileDetailsView(views.DetailView):
 
 class ProfileEditView(LoginRequiredMixin, views.UpdateView):
     model = Profile
-    fields = '__all__'
+    form_class = ProfileEditForm
     template_name = 'account/edit.html'
 
     def get_success_url(self):

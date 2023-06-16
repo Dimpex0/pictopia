@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block page_content %}
-<form method="POST" action="{% url 'profile edit page' %}">
+<form method="POST" action="{% url 'profile edit page' %}" enctype="multipart/form-data">
     {{ form.as_div }}
     <button>Update</button>
     {% csrf_token %}

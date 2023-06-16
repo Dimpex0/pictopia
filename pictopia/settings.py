@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     'pictopia.account',
     'pictopia.post',
+    'pictopia.comment',
+    'pictopia.like',
 ]
 
 MIDDLEWARE = [
@@ -133,7 +135,7 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media_files'
 
-LOGIN_URL = '/accounts/login/'
+LOGIN_URL = '/account/login/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

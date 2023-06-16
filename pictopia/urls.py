@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pictopia.post.urls')),
     path('account/', include('pictopia.account.urls')),
+    path('like/', include('pictopia.like.urls')),
+    path('comment/', include('pictopia.comment.urls'))
 ]

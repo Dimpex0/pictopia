@@ -58,5 +58,7 @@ nav {
 }
 
 .nav-profile-image {
-    height: 50px;
+    border-radius: 50%;
+    height: 60px;
+    clip-path: circle();
 }

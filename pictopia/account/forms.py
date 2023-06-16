@@ -1,4 +1,6 @@
 from random import randint
+
+from django import forms
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm, UsernameField
 
@@ -25,3 +27,13 @@ class ClientRegisterForm(UserCreationForm):
         )
         if commit:
             profile.save()
+
+
+class ProfileEditForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['username', 'first_name', 'last_name', 'description', 'image']
+        labels = {
+            'description': 'Bio',
+            'image': 'Profile image'
+        }
