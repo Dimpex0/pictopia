@@ -7,6 +7,8 @@ from django.views import generic as views
 
 from pictopia.account.forms import ClientRegisterForm, ProfileEditForm
 from pictopia.account.models import Profile
+from pictopia.comment.models import Comment
+from pictopia.like.models import Like
 from pictopia.post.models import Post
 
 UserModel = get_user_model()
@@ -42,6 +44,22 @@ class ProfileDetailsView(views.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        current_profile = self.get_object()
+        comments = Comment.objects.all()
+        comments_count = 0
+        for comment in comments:
+            if comment.post.profile == current_profile:
+                comments_count += 1
+
+        likes = Like.objects.all()
+        likes_count = 0
+        for like in likes:
+            if like.post.profile == current_profile:
+                likes_count += 1
+
+        context['profile'] = current_profile
+        context['likes_count'] = likes_count
+        context['comments_count'] = comments_count
         context['posts'] = Post.objects.filter(profile=self.get_object()).order_by('-created_at')
         return context
 

@@ -88,7 +88,7 @@ class Profile(models.Model):
         elif self.last_name and not self.first_name:
             return self.last_name
         else:
-            return ''
+            return None
 
     def __str__(self):
         return self.email
