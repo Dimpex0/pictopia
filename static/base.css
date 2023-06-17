@@ -8,7 +8,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px 10px 40px;
-    background-color: #2a4843;
+    background-color: lightgray;
     margin-bottom: 30px;
 }
 
@@ -30,7 +30,7 @@ nav {
     font-family: jsMath, serif;
     font-size: 42px;
     font-weight: 400;
-    color: #a0cec6;
+    color: black;
     text-decoration: unset;
     margin-right: 20px;
 }
@@ -38,7 +38,7 @@ nav {
 .nav-a {
     font-size: 26px;
     text-decoration: unset;
-    color: #a0cec6;
+    color: black;
 }
 
 .nav-a:hover {
