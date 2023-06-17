@@ -66,7 +66,7 @@ class Profile(models.Model):
         null=True,
         blank=True,
     )
-    description = models.CharField(
+    description = models.TextField(
         max_length=150,
         null=True,
         blank=True,
