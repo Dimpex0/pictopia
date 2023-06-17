@@ -53,15 +53,19 @@
             {% endif %}
             </div>
         </div>
-        <div class="user-posts-container">
-            <div class="user-posts-grid">
-                {% for post in posts %}
-                    <div class="user-post">
-                        <a href="#"><img class="post-image" src="/media/{{ post.image }}" alt=""></a>
-                    </div>
-                {% endfor %}
+        {% if posts %}
+            <div class="user-posts-container">
+                <div class="user-posts-grid">
+                    {% for post in posts %}
+                        <div class="user-post">
+                            <a href="#"><img class="post-image" src="/media/{{ post.image }}" alt=""></a>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
-        </div>
+        {% else %}
+            <h1 style="text-align: center">No posts to show :(</h1>
+        {% endif %}
     </div>
 
 {% endblock %}
