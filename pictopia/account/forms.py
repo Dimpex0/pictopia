@@ -32,11 +32,10 @@ class ClientRegisterForm(UserCreationForm):
 class ProfileEditForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['username', 'first_name', 'last_name', 'description', 'image']
+        fields = ['username', 'first_name', 'last_name', 'description']
         widgets = {
-            'description': forms.Textarea
+            'description': forms.Textarea,
         }
         labels = {
             'description': 'Bio',
-            'image': 'Profile image'
         }

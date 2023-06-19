@@ -3,7 +3,6 @@ from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy
 from django.views import generic as views
 
-from pictopia.account.models import Profile
 from pictopia.like.models import Like
 from pictopia.post.forms import CreatePostForm
 from pictopia.post.models import Post

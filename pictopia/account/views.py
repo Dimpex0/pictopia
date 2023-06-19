@@ -1,7 +1,10 @@
+from django.contrib import messages
 from django.contrib.auth import get_user_model, logout
 from django.contrib.auth import views as auth_views
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import redirect
+from django.http import HttpResponseRedirect
+from django.shortcuts import redirect, get_object_or_404, render
 from django.urls import reverse_lazy, reverse
 from django.views import generic as views
 
@@ -79,3 +82,24 @@ class ProfileEditView(LoginRequiredMixin, views.UpdateView):
 
     def get_object(self, queryset=None):
         return Profile.objects.get(client=self.request.user)
+
+
+@login_required
+def change_profile_picture(request):
+    if 'change' in request.FILES:
+        try:
+            profile = Profile.objects.get(client=request.user)
+            profile.image.delete()
+            profile.image = request.FILES['change']
+            profile.save()
+        except:
+            profile = Profile.objects.get(client=request.user)
+            profile.image.delete()
+            profile.save()
+            return redirect('profile edit page')
+
+    if 'delete' in request.POST:
+        profile = get_object_or_404(Profile, client=request.user)
+        profile.image.delete()
+        profile.save()
+    return redirect('profile edit page')

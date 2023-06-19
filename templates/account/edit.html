@@ -1,8 +1,36 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ current_profile.username }} | Profile edit{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'style/account/edit.css' %}">
+{% endblock %}
 {% block page_content %}
-<form method="POST" action="{% url 'profile edit page' %}" enctype="multipart/form-data">
-    {{ form.as_div }}
-    <button>Update</button>
-    {% csrf_token %}
-</form>
+
+    <div class="page-container">
+        <div class="image-conteiner">
+            <img src="{% if current_profile.image %}/media/{{ current_profile.image }}{% else %}{% static 'images/default-user.png' %}{% endif %}" alt="">
+        </div>
+        <div class="image-actions-container">
+            <form method="POST" action="{% url 'change profile picture' %}" enctype="multipart/form-data">
+                <div class="errorlist">
+                    {{ error }}
+                </div>
+                {% if current_profile.image %}
+                    <input type="file" class="image-one-button" name="change" accept="image/png, image/gif, image/jpeg" onchange="submit()">
+                    <button class="image-two-buttons" name="delete">Delete profile picture</button>
+                {% else %}
+                    <input type="file" class="image-one-button" name="change" accept="image/png, image/gif, image/jpeg" onchange="submit()">
+                {% endif %}
+                {% csrf_token %}
+            </form>
+        </div>
+        <form method="post" action="{% url 'profile edit page' %}">
+            {{ form.as_div }}
+            <div>
+                <button>Update</button>
+            </div>
+            {% csrf_token %}
+        </form>
+    </div>
+
 {% endblock %}
