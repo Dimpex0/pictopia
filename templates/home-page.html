@@ -77,7 +77,7 @@
                                                 <p class="comment-time">{{ comment.created_at|postedTime }}</p>
                                             </div>
                                             {% if comment.profile == current_profile %}
-                                                <form method="POST" action="{% url 'delete comment' comment_pk=comment.pk %}">
+                                                <form method="POST" action="{% url 'delete comment' comment_pk=comment.pk %}?next={{ request.path|urlencode }}">
                                                     <button>Delete</button>
                                                     {% csrf_token %}
                                                 </form>
@@ -93,9 +93,9 @@
                 <div class="post-actions">
                         {% postLiked post current_profile as liked %}
                         {% if liked %}
-                            <a href="{% url 'like/dislike post' post_pk=post.pk %}"><i class="fa-solid fa-heart"></i></a>
+                            <a href="{% url 'like/dislike post' post_pk=post.pk %}?next={{ request.path|urlencode }}"><i class="fa-solid fa-heart"></i></a>
                         {% else %}
-                            <a href="{% url 'like/dislike post' post_pk=post.pk %}"><i class="fa-regular fa-heart"></i></a>
+                            <a href="{% url 'like/dislike post' post_pk=post.pk %}?next={{ request.path|urlencode }}"><i class="fa-regular fa-heart"></i></a>
                         {% endif %}
                     <p>{{ post.like_set.count }}</p>
                     <button><i class="fa-regular fa-paper-plane"></i></button>

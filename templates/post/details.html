@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load customs %}
+{% load static %}
+{% block title %}Pictopia{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'home-page.css' %}">
+{% endblock %}
+
+{% block page_content %}
+
+    <div class="page-container">
+
+        <div class="post-container">
+            <div class="post-user">
+                <div class="post-user-image-username-time">
+                    {% if post.profile.image %}
+                        <img class="post-user-image" src="/media/{{ post.profile.image }}" alt="">
+                    {% else %}
+                        <img class="post-user-image no-img" src="{% static 'images/default-user.png' %}" alt="">
+                    {% endif %}
+                    <div class="post-username-time">
+                        <a class="post-user-username" href="{% url 'profile details page' profile_pk=post.profile.pk %}">{{ post.profile.username }}</a>
+                        <p class="post-posted-time">{{ post.created_at|postedTime }}</p>
+                    </div>
+                </div>
+                <div class="post-user-delete">
+                    {% if user == current_profile.client %}
+                        <form method="post" action="{% url 'delete post page' post_pk=post.pk %}">
+                            <button class="delete-post-button">Delete</button>
+                            {% csrf_token %}
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="post-content">
+                <div class="post-caption-image">
+                    <div class="post-caption">
+                        {% if post.description %}
+                            <p class="caption-title">caption:</p>
+                            <p>{{ post.description }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="post-image">
+                        <img src="/media/{{ post.image }}" alt="">
+                    </div>
+                </div>
+                <div class="post-comments-container">
+                    <div class="post-comment-title">
+                        <i class="fa-regular fa-comments"></i> COMMENTS
+                    </div>
+                    <div class="post-comments">
+                        {% if user.is_authenticated %}
+                            <div class="add-comment-container">
+                                {% if current_profile.image %}
+                                    <img class="comment-image" src="/media/{{ current_profile.image }}" alt="">
+                                {% else %}
+                                    <img class="comment-image no-img" src="{% static 'images/default-user.png' %}" alt="">
+                                {% endif %}
+                                <form method="POST" action="{% url 'create comment' post_pk=post.pk %}">
+                                    <input class="comment-input" type="text" placeholder="Add a comment..." maxlength="100" name="comment">
+                                    {% csrf_token %}
+                                </form>
+                            </div>
+                        {% endif %}
+                        <div class="comments-container">
+                            {% postComments post.pk as comments %}
+                            {% for comment in comments %}
+                                <div class="comment-container">
+                                    <div class="comment-user-container">
+                                        {% if comment.profile.image %}
+                                            <img class="comment-image" src="/media/{{ comment.profile.image }}" alt="">
+                                        {% else %}
+                                            <img class="comment-image no-img" src="{% static 'images/default-user.png' %}" alt="">
+                                        {% endif %}
+                                        <div class="comment-user-time">
+                                            <a class="comment-username" href="{% url 'profile details page' profile_pk=comment.profile.pk %}">{{ comment.profile.username }}</a>
+                                            <p class="comment-time">{{ comment.created_at|postedTime }}</p>
+                                        </div>
+                                        {% if comment.profile == current_profile %}
+                                            <form method="POST" action="{% url 'delete comment' comment_pk=comment.pk %}?next={{ request.path|urlencode }}">
+                                                <button>Delete</button>
+                                                {% csrf_token %}
+                                            </form>
+                                        {% endif %}
+                                    </div>
+                                    <p>{{ comment.text }}</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-actions">
+                    {% postLiked post current_profile as liked %}
+                    {% if liked %}
+                        <a href="{% url 'like/dislike post' post_pk=post.pk %}?next={{ request.path|urlencode }}"><i class="fa-solid fa-heart"></i></a>
+                    {% else %}
+                        <a href="{% url 'like/dislike post' post_pk=post.pk %}?next={{ request.path|urlencode }}"><i class="fa-regular fa-heart"></i></a>
+                    {% endif %}
+                <p>{{ post.like_set.count }}</p>
+                <button><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

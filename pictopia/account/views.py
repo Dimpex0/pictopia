@@ -25,7 +25,9 @@ class ClientRegisterView(views.CreateView):
     model = UserModel
     template_name = 'account/register.html'
     form_class = ClientRegisterForm
-    success_url = reverse_lazy('home page')
+
+    def get_success_url(self):
+        return reverse_lazy('home page')
 
 
 class ClientLoginView(auth_views.LoginView):

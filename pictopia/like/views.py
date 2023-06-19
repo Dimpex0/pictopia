@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 
@@ -14,6 +15,6 @@ def like_post(request, post_pk):
     for like in Like.objects.filter(profile=profile, post=post):
         if like.profile == post.profile:
             like.delete()
-            return redirect('home page')
+            return HttpResponseRedirect(request.GET.get('next', redirect('home page')))
     Like(profile=profile, post=post).save()
-    return redirect('home page')
+    return HttpResponseRedirect(request.GET.get('next', redirect('home page')))

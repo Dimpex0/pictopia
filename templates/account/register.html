@@ -1,5 +1,36 @@
-<form method="POST" action="{% url 'client register page' %}">
-    {{ form }}
-    <button>Register</button>
-    {% csrf_token %}
-</form>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pictopia | Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'style/account/register.css' %}">
+</head>
+<body>
+    <div class="page-container">
+        <h1>Pictopia</h1>
+        <form method="POST" action="{% url 'client register page' %}">
+            {% for field in form %}
+                <div>
+                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                    <ul class="errorlist">
+                        {% for error in field.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                    <input type="{{ field.widget_type }}" id="{{ field.id_for_label }}" name="{{ field.name }}">
+                    <div class="helptext">{{ field.help_text }}</div>
+                </div>
+            {% endfor %}
+{#            {{ form.as_div }}#}
+            <div class="button-div">
+                <button>Register</button>
+            </div>
+            {% csrf_token %}
+        </form>
+    </div>
+    <p>Already have an account? <a href="{% url 'client login page' %}">Login here</a></p>
+</body>
+</html>

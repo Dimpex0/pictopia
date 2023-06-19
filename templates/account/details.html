@@ -58,7 +58,7 @@
                 <div class="user-posts-grid">
                     {% for post in posts %}
                         <div class="user-post">
-                            <a href="#"><img class="post-image" src="/media/{{ post.image }}" alt=""></a>
+                            <a href="{% url 'post details page' post_pk=post.pk %}"><img class="post-image" src="/media/{{ post.image }}" alt=""></a>
                         </div>
                     {% endfor %}
                 </div>
