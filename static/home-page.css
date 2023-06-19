@@ -18,9 +18,15 @@ body {
 
 .post-user {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
+    gap: 10px;
+}
+
+.post-user-image-username-time {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -29,6 +35,18 @@ body {
     height: 50px;
     clip-path: circle();
     background-color: lightgray;
+}
+
+.delete-post-button {
+    all: unset;
+    cursor: pointer;
+    background-color: black;
+    padding: 3px 10px 3px 10px;
+}
+
+.delete-post-button:hover {
+    background-color: #D9D9D9;
+    color: black;
 }
 
 .no-img {

@@ -12,14 +12,24 @@
 
             <div class="post-container">
                 <div class="post-user">
-                    {% if post.profile.image %}
-                        <img class="post-user-image" src="/media/{{ post.profile.image }}" alt="">
-                    {% else %}
-                        <img class="post-user-image no-img" src="{% static 'images/default-user.png' %}" alt="">
-                    {% endif %}
-                    <div class="post-username-time">
-                        <a class="post-user-username" href="{% url 'profile details page' profile_pk=post.profile.pk %}">{{ post.profile.username }}</a>
-                        <p class="post-posted-time">{{ post.created_at|postedTime }}</p>
+                    <div class="post-user-image-username-time">
+                        {% if post.profile.image %}
+                            <img class="post-user-image" src="/media/{{ post.profile.image }}" alt="">
+                        {% else %}
+                            <img class="post-user-image no-img" src="{% static 'images/default-user.png' %}" alt="">
+                        {% endif %}
+                        <div class="post-username-time">
+                            <a class="post-user-username" href="{% url 'profile details page' profile_pk=post.profile.pk %}">{{ post.profile.username }}</a>
+                            <p class="post-posted-time">{{ post.created_at|postedTime }}</p>
+                        </div>
+                    </div>
+                    <div class="post-user-delete">
+                        {% if user == current_profile.client %}
+                            <form method="post" action="{% url 'delete post page' post_pk=post.pk %}">
+                                <button class="delete-post-button">Delete</button>
+                                {% csrf_token %}
+                            </form>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="post-content">

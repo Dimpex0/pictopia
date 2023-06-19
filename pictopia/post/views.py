@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views import generic as views
 
@@ -29,3 +30,11 @@ class CreatePostView(LoginRequiredMixin, views.CreateView):
         kwargs = super(CreatePostView, self).get_form_kwargs()
         kwargs['request'] = self.request
         return kwargs
+
+
+def delete_post(request, post_pk):
+    post = Post.objects.get(pk=post_pk)
+    if post.profile.client == request.user:
+        post.delete()
+
+    return redirect('home page')
