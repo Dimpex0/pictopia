@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'jsMath';
+    src: url("static/fonts/jsMath-cmbh10.ttf");
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+    background-color: lightgray;
+    margin-bottom: 30px;
+}
+
+.logo-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.create-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+#logo {
+    font-family: jsMath, serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: black;
+    text-decoration: unset;
+    margin-right: 20px;
+}
+
+.nav-a {
+    font-size: 26px;
+    text-decoration: unset;
+    color: black;
+}
+
+.nav-a:hover {
+    transition: 200ms;
+    color: lightgrey;
+}
+
+.fa-regular.fa-square-plus {
+    font-size: 35px;
+    color: black;
+    padding-top: 2px;
+}
+
+.fa-regular.fa-square-plus:hover {
+    transition: 200ms;
+    color: lightgrey;
+}
+
+.nav-profile-image {
+    border-radius: 50%;
+    height: 60px;
+    clip-path: circle();
+}

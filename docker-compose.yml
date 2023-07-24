@@ -1,0 +1,39 @@
+version: '3.4'
+
+services:
+  web:
+    image: dimpex/pictopia_deploy
+    build: .
+    command: gunicorn --bind=0.0.0.0:8000 pictopia.wsgi:application
+    ports:
+      - "8000:8000"
+    volumes:
+      - /tmp/pictopia/static:/app/staticfiles/
+
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /tmp/pictopia/static:/home/app/web/staticfiles
+      - ./staticfiles:/home/app/web/staticfiles
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/logs:/var/log/nginx
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+    links:
+      - web
+
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: dbpass
+      POSTGRES_USER: dbuser
+      POSTGRES_DB: pictopia
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - ./postgresql:/var/lib/postgresql/data

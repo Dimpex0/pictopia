@@ -1,0 +1,723 @@
+2023/07/24 15:07:24 [notice] 1#1: using the "epoll" event method
+2023/07/24 15:07:24 [notice] 1#1: nginx/1.25.1
+2023/07/24 15:07:24 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/07/24 15:07:24 [notice] 1#1: OS: Linux 5.10.102.1-microsoft-standard-WSL2
+2023/07/24 15:07:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/07/24 15:07:24 [notice] 1#1: start worker processes
+2023/07/24 15:07:24 [notice] 1#1: start worker process 20
+2023/07/24 15:07:24 [notice] 1#1: start worker process 21
+2023/07/24 15:07:24 [notice] 1#1: start worker process 22
+2023/07/24 15:07:24 [notice] 1#1: start worker process 23
+2023/07/24 15:07:24 [notice] 1#1: start worker process 24
+2023/07/24 15:07:24 [notice] 1#1: start worker process 25
+2023/07/24 15:07:24 [notice] 1#1: start worker process 26
+2023/07/24 15:07:24 [notice] 1#1: start worker process 27
+2023/07/24 15:07:24 [notice] 1#1: start worker process 28
+2023/07/24 15:07:24 [notice] 1#1: start worker process 29
+2023/07/24 15:07:24 [notice] 1#1: start worker process 30
+2023/07/24 15:07:24 [notice] 1#1: start worker process 31
+2023/07/24 15:07:24 [notice] 1#1: start worker process 32
+2023/07/24 15:07:24 [notice] 1#1: start worker process 33
+2023/07/24 15:07:24 [notice] 1#1: start worker process 34
+2023/07/24 15:07:24 [notice] 1#1: start worker process 35
+2023/07/24 15:07:24 [notice] 1#1: start worker process 36
+2023/07/24 15:07:24 [notice] 1#1: start worker process 37
+2023/07/24 15:07:24 [notice] 1#1: start worker process 38
+2023/07/24 15:07:24 [notice] 1#1: start worker process 39
+2023/07/24 15:09:35 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/07/24 15:09:35 [notice] 21#21: gracefully shutting down
+2023/07/24 15:09:35 [notice] 20#20: gracefully shutting down
+2023/07/24 15:09:35 [notice] 22#22: gracefully shutting down
+2023/07/24 15:09:35 [notice] 23#23: gracefully shutting down
+2023/07/24 15:09:35 [notice] 25#25: gracefully shutting down
+2023/07/24 15:09:35 [notice] 26#26: gracefully shutting down
+2023/07/24 15:09:35 [notice] 24#24: gracefully shutting down
+2023/07/24 15:09:35 [notice] 27#27: gracefully shutting down
+2023/07/24 15:09:35 [notice] 29#29: gracefully shutting down
+2023/07/24 15:09:35 [notice] 30#30: gracefully shutting down
+2023/07/24 15:09:35 [notice] 32#32: gracefully shutting down
+2023/07/24 15:09:35 [notice] 31#31: gracefully shutting down
+2023/07/24 15:09:35 [notice] 33#33: gracefully shutting down
+2023/07/24 15:09:35 [notice] 34#34: gracefully shutting down
+2023/07/24 15:09:35 [notice] 28#28: gracefully shutting down
+2023/07/24 15:09:35 [notice] 36#36: gracefully shutting down
+2023/07/24 15:09:35 [notice] 35#35: gracefully shutting down
+2023/07/24 15:09:35 [notice] 37#37: gracefully shutting down
+2023/07/24 15:09:35 [notice] 38#38: gracefully shutting down
+2023/07/24 15:09:35 [notice] 39#39: gracefully shutting down
+2023/07/24 15:09:35 [notice] 21#21: exiting
+2023/07/24 15:09:35 [notice] 20#20: exiting
+2023/07/24 15:09:35 [notice] 22#22: exiting
+2023/07/24 15:09:35 [notice] 23#23: exiting
+2023/07/24 15:09:35 [notice] 25#25: exiting
+2023/07/24 15:09:35 [notice] 26#26: exiting
+2023/07/24 15:09:35 [notice] 24#24: exiting
+2023/07/24 15:09:35 [notice] 27#27: exiting
+2023/07/24 15:09:35 [notice] 29#29: exiting
+2023/07/24 15:09:35 [notice] 30#30: exiting
+2023/07/24 15:09:35 [notice] 32#32: exiting
+2023/07/24 15:09:35 [notice] 31#31: exiting
+2023/07/24 15:09:35 [notice] 33#33: exiting
+2023/07/24 15:09:35 [notice] 34#34: exiting
+2023/07/24 15:09:35 [notice] 28#28: exiting
+2023/07/24 15:09:35 [notice] 36#36: exiting
+2023/07/24 15:09:35 [notice] 35#35: exiting
+2023/07/24 15:09:35 [notice] 37#37: exiting
+2023/07/24 15:09:35 [notice] 38#38: exiting
+2023/07/24 15:09:35 [notice] 39#39: exiting
+2023/07/24 15:09:35 [notice] 21#21: exit
+2023/07/24 15:09:35 [notice] 20#20: exit
+2023/07/24 15:09:35 [notice] 22#22: exit
+2023/07/24 15:09:35 [notice] 23#23: exit
+2023/07/24 15:09:35 [notice] 25#25: exit
+2023/07/24 15:09:35 [notice] 26#26: exit
+2023/07/24 15:09:35 [notice] 24#24: exit
+2023/07/24 15:09:35 [notice] 27#27: exit
+2023/07/24 15:09:35 [notice] 29#29: exit
+2023/07/24 15:09:35 [notice] 30#30: exit
+2023/07/24 15:09:35 [notice] 32#32: exit
+2023/07/24 15:09:35 [notice] 31#31: exit
+2023/07/24 15:09:35 [notice] 33#33: exit
+2023/07/24 15:09:35 [notice] 34#34: exit
+2023/07/24 15:09:35 [notice] 28#28: exit
+2023/07/24 15:09:35 [notice] 36#36: exit
+2023/07/24 15:09:35 [notice] 35#35: exit
+2023/07/24 15:09:35 [notice] 37#37: exit
+2023/07/24 15:09:35 [notice] 38#38: exit
+2023/07/24 15:09:35 [notice] 39#39: exit
+2023/07/24 15:09:35 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/07/24 15:09:35 [notice] 1#1: worker process 24 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 25 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 27 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 30 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 31 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:09:35 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/07/24 15:09:35 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/07/24 15:09:35 [notice] 1#1: worker process 20 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 21 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 22 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 23 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 29 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 32 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 37 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:09:35 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2023/07/24 15:09:35 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/07/24 15:09:35 [notice] 1#1: worker process 26 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 28 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 33 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 34 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 35 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 36 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 38 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: worker process 39 exited with code 0
+2023/07/24 15:09:35 [notice] 1#1: exit
+2023/07/24 15:09:36 [notice] 1#1: using the "epoll" event method
+2023/07/24 15:09:36 [notice] 1#1: nginx/1.25.1
+2023/07/24 15:09:36 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/07/24 15:09:36 [notice] 1#1: OS: Linux 5.10.102.1-microsoft-standard-WSL2
+2023/07/24 15:09:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/07/24 15:09:36 [notice] 1#1: start worker processes
+2023/07/24 15:09:36 [notice] 1#1: start worker process 20
+2023/07/24 15:09:36 [notice] 1#1: start worker process 21
+2023/07/24 15:09:36 [notice] 1#1: start worker process 22
+2023/07/24 15:09:36 [notice] 1#1: start worker process 23
+2023/07/24 15:09:36 [notice] 1#1: start worker process 24
+2023/07/24 15:09:36 [notice] 1#1: start worker process 25
+2023/07/24 15:09:36 [notice] 1#1: start worker process 26
+2023/07/24 15:09:36 [notice] 1#1: start worker process 27
+2023/07/24 15:09:36 [notice] 1#1: start worker process 28
+2023/07/24 15:09:36 [notice] 1#1: start worker process 29
+2023/07/24 15:09:36 [notice] 1#1: start worker process 30
+2023/07/24 15:09:36 [notice] 1#1: start worker process 31
+2023/07/24 15:09:36 [notice] 1#1: start worker process 32
+2023/07/24 15:09:36 [notice] 1#1: start worker process 33
+2023/07/24 15:09:36 [notice] 1#1: start worker process 34
+2023/07/24 15:09:36 [notice] 1#1: start worker process 35
+2023/07/24 15:09:36 [notice] 1#1: start worker process 36
+2023/07/24 15:09:36 [notice] 1#1: start worker process 37
+2023/07/24 15:09:36 [notice] 1#1: start worker process 38
+2023/07/24 15:09:36 [notice] 1#1: start worker process 39
+2023/07/24 15:10:40 [error] 21#21: *2 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:40 [error] 20#20: *1 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:40 [error] 21#21: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:40 [error] 21#21: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:42 [error] 21#21: *2 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:42 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:42 [error] 22#22: *7 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:43 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:43 [error] 21#21: *2 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:43 [error] 22#22: *7 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:44 [error] 21#21: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:44 [error] 22#22: *7 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:44 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:45 [error] 22#22: *7 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:45 [error] 20#20: *1 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:45 [error] 21#21: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:46 [error] 21#21: *2 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:46 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:10:46 [error] 21#21: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:03 [error] 23#23: *12 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:03 [error] 24#24: *13 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:03 [error] 24#24: *13 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:03 [error] 24#24: *13 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:11 [error] 24#24: *13 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:11 [error] 23#23: *12 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:11 [error] 23#23: *12 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:50 [error] 23#23: *12 open() "/home/app/web/staticfiles/style/account/login.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/style/account/login.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/account/login/"
+2023/07/24 15:12:54 [error] 24#24: *13 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:54 [error] 23#23: *12 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:54 [error] 23#23: *12 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:54 [error] 23#23: *12 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:12:59 [error] 24#24: *13 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/account/profile/1/"
+2023/07/24 15:12:59 [error] 23#23: *12 open() "/home/app/web/staticfiles/style/account/details.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/style/account/details.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/account/profile/1/"
+2023/07/24 15:12:59 [error] 23#23: *12 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/account/profile/1/"
+2023/07/24 15:13:02 [error] 23#23: *12 open() "/home/app/web/staticfiles/style/account/edit.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/style/account/edit.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/account/profile/edit/"
+2023/07/24 15:13:02 [error] 24#24: *13 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/account/profile/edit/"
+2023/07/24 15:13:02 [error] 25#25: *21 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/account/profile/edit/"
+2023/07/24 15:13:04 [error] 25#25: *21 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/create/"
+2023/07/24 15:13:04 [error] 25#25: *21 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/create/"
+2023/07/24 15:13:08 [error] 23#23: *12 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:13:08 [error] 24#24: *13 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:13:08 [error] 25#25: *21 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:13:45 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/07/24 15:13:45 [notice] 20#20: gracefully shutting down
+2023/07/24 15:13:45 [notice] 21#21: gracefully shutting down
+2023/07/24 15:13:45 [notice] 21#21: exiting
+2023/07/24 15:13:45 [notice] 22#22: gracefully shutting down
+2023/07/24 15:13:45 [notice] 23#23: gracefully shutting down
+2023/07/24 15:13:45 [notice] 25#25: gracefully shutting down
+2023/07/24 15:13:45 [notice] 26#26: gracefully shutting down
+2023/07/24 15:13:45 [notice] 27#27: gracefully shutting down
+2023/07/24 15:13:45 [notice] 28#28: gracefully shutting down
+2023/07/24 15:13:45 [notice] 29#29: gracefully shutting down
+2023/07/24 15:13:45 [notice] 24#24: gracefully shutting down
+2023/07/24 15:13:45 [notice] 30#30: gracefully shutting down
+2023/07/24 15:13:45 [notice] 31#31: gracefully shutting down
+2023/07/24 15:13:45 [notice] 32#32: gracefully shutting down
+2023/07/24 15:13:45 [notice] 33#33: gracefully shutting down
+2023/07/24 15:13:45 [notice] 35#35: gracefully shutting down
+2023/07/24 15:13:45 [notice] 36#36: gracefully shutting down
+2023/07/24 15:13:45 [notice] 37#37: gracefully shutting down
+2023/07/24 15:13:45 [notice] 38#38: gracefully shutting down
+2023/07/24 15:13:45 [notice] 39#39: gracefully shutting down
+2023/07/24 15:13:45 [notice] 34#34: gracefully shutting down
+2023/07/24 15:13:45 [notice] 20#20: exiting
+2023/07/24 15:13:45 [notice] 21#21: exit
+2023/07/24 15:13:45 [notice] 22#22: exiting
+2023/07/24 15:13:45 [notice] 23#23: exiting
+2023/07/24 15:13:45 [notice] 25#25: exiting
+2023/07/24 15:13:45 [notice] 26#26: exiting
+2023/07/24 15:13:45 [notice] 27#27: exiting
+2023/07/24 15:13:45 [notice] 28#28: exiting
+2023/07/24 15:13:45 [notice] 29#29: exiting
+2023/07/24 15:13:45 [notice] 24#24: exiting
+2023/07/24 15:13:45 [notice] 30#30: exiting
+2023/07/24 15:13:45 [notice] 31#31: exiting
+2023/07/24 15:13:45 [notice] 32#32: exiting
+2023/07/24 15:13:45 [notice] 33#33: exiting
+2023/07/24 15:13:45 [notice] 35#35: exiting
+2023/07/24 15:13:45 [notice] 36#36: exiting
+2023/07/24 15:13:45 [notice] 37#37: exiting
+2023/07/24 15:13:45 [notice] 38#38: exiting
+2023/07/24 15:13:45 [notice] 39#39: exiting
+2023/07/24 15:13:45 [notice] 34#34: exiting
+2023/07/24 15:13:45 [notice] 20#20: exit
+2023/07/24 15:13:45 [notice] 22#22: exit
+2023/07/24 15:13:45 [notice] 23#23: exit
+2023/07/24 15:13:45 [notice] 25#25: exit
+2023/07/24 15:13:45 [notice] 26#26: exit
+2023/07/24 15:13:45 [notice] 27#27: exit
+2023/07/24 15:13:45 [notice] 28#28: exit
+2023/07/24 15:13:45 [notice] 29#29: exit
+2023/07/24 15:13:45 [notice] 24#24: exit
+2023/07/24 15:13:45 [notice] 30#30: exit
+2023/07/24 15:13:45 [notice] 31#31: exit
+2023/07/24 15:13:45 [notice] 32#32: exit
+2023/07/24 15:13:45 [notice] 33#33: exit
+2023/07/24 15:13:45 [notice] 35#35: exit
+2023/07/24 15:13:45 [notice] 36#36: exit
+2023/07/24 15:13:45 [notice] 37#37: exit
+2023/07/24 15:13:45 [notice] 38#38: exit
+2023/07/24 15:13:45 [notice] 39#39: exit
+2023/07/24 15:13:45 [notice] 34#34: exit
+2023/07/24 15:13:45 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/07/24 15:13:45 [notice] 1#1: worker process 28 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 32 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 35 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 39 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:13:45 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/07/24 15:13:45 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/07/24 15:13:45 [notice] 1#1: worker process 21 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 22 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 23 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 25 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 27 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 29 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 31 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 37 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 38 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:13:45 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/07/24 15:13:45 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/07/24 15:13:45 [notice] 1#1: worker process 20 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:13:45 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2023/07/24 15:13:45 [notice] 1#1: worker process 26 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 30 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 36 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:13:45 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/07/24 15:13:45 [notice] 1#1: worker process 33 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:13:45 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/07/24 15:13:45 [notice] 1#1: worker process 24 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: worker process 34 exited with code 0
+2023/07/24 15:13:45 [notice] 1#1: exit
+2023/07/24 15:23:54 [notice] 1#1: using the "epoll" event method
+2023/07/24 15:23:54 [notice] 1#1: nginx/1.25.1
+2023/07/24 15:23:54 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/07/24 15:23:54 [notice] 1#1: OS: Linux 5.10.102.1-microsoft-standard-WSL2
+2023/07/24 15:23:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/07/24 15:23:54 [notice] 1#1: start worker processes
+2023/07/24 15:23:54 [notice] 1#1: start worker process 20
+2023/07/24 15:23:54 [notice] 1#1: start worker process 21
+2023/07/24 15:23:54 [notice] 1#1: start worker process 22
+2023/07/24 15:23:54 [notice] 1#1: start worker process 23
+2023/07/24 15:23:54 [notice] 1#1: start worker process 24
+2023/07/24 15:23:54 [notice] 1#1: start worker process 25
+2023/07/24 15:23:54 [notice] 1#1: start worker process 26
+2023/07/24 15:23:54 [notice] 1#1: start worker process 27
+2023/07/24 15:23:54 [notice] 1#1: start worker process 28
+2023/07/24 15:23:54 [notice] 1#1: start worker process 29
+2023/07/24 15:23:54 [notice] 1#1: start worker process 30
+2023/07/24 15:23:54 [notice] 1#1: start worker process 31
+2023/07/24 15:23:54 [notice] 1#1: start worker process 32
+2023/07/24 15:23:54 [notice] 1#1: start worker process 33
+2023/07/24 15:23:54 [notice] 1#1: start worker process 34
+2023/07/24 15:23:54 [notice] 1#1: start worker process 35
+2023/07/24 15:23:54 [notice] 1#1: start worker process 36
+2023/07/24 15:23:54 [notice] 1#1: start worker process 37
+2023/07/24 15:23:54 [notice] 1#1: start worker process 38
+2023/07/24 15:23:54 [notice] 1#1: start worker process 39
+2023/07/24 15:26:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/07/24 15:26:47 [notice] 20#20: gracefully shutting down
+2023/07/24 15:26:47 [notice] 38#38: gracefully shutting down
+2023/07/24 15:26:47 [notice] 21#21: gracefully shutting down
+2023/07/24 15:26:47 [notice] 22#22: gracefully shutting down
+2023/07/24 15:26:47 [notice] 24#24: gracefully shutting down
+2023/07/24 15:26:47 [notice] 23#23: gracefully shutting down
+2023/07/24 15:26:47 [notice] 26#26: gracefully shutting down
+2023/07/24 15:26:47 [notice] 25#25: gracefully shutting down
+2023/07/24 15:26:47 [notice] 27#27: gracefully shutting down
+2023/07/24 15:26:47 [notice] 28#28: gracefully shutting down
+2023/07/24 15:26:47 [notice] 29#29: gracefully shutting down
+2023/07/24 15:26:47 [notice] 31#31: gracefully shutting down
+2023/07/24 15:26:47 [notice] 30#30: gracefully shutting down
+2023/07/24 15:26:47 [notice] 32#32: gracefully shutting down
+2023/07/24 15:26:47 [notice] 33#33: gracefully shutting down
+2023/07/24 15:26:47 [notice] 34#34: gracefully shutting down
+2023/07/24 15:26:47 [notice] 35#35: gracefully shutting down
+2023/07/24 15:26:47 [notice] 36#36: gracefully shutting down
+2023/07/24 15:26:47 [notice] 37#37: gracefully shutting down
+2023/07/24 15:26:47 [notice] 39#39: gracefully shutting down
+2023/07/24 15:26:47 [notice] 20#20: exiting
+2023/07/24 15:26:47 [notice] 38#38: exiting
+2023/07/24 15:26:47 [notice] 20#20: exit
+2023/07/24 15:26:47 [notice] 21#21: exiting
+2023/07/24 15:26:47 [notice] 22#22: exiting
+2023/07/24 15:26:47 [notice] 24#24: exiting
+2023/07/24 15:26:47 [notice] 23#23: exiting
+2023/07/24 15:26:47 [notice] 26#26: exiting
+2023/07/24 15:26:47 [notice] 25#25: exiting
+2023/07/24 15:26:47 [notice] 27#27: exiting
+2023/07/24 15:26:47 [notice] 28#28: exiting
+2023/07/24 15:26:47 [notice] 29#29: exiting
+2023/07/24 15:26:47 [notice] 31#31: exiting
+2023/07/24 15:26:47 [notice] 30#30: exiting
+2023/07/24 15:26:47 [notice] 32#32: exiting
+2023/07/24 15:26:47 [notice] 33#33: exiting
+2023/07/24 15:26:47 [notice] 34#34: exiting
+2023/07/24 15:26:47 [notice] 35#35: exiting
+2023/07/24 15:26:47 [notice] 36#36: exiting
+2023/07/24 15:26:47 [notice] 37#37: exiting
+2023/07/24 15:26:47 [notice] 39#39: exiting
+2023/07/24 15:26:47 [notice] 38#38: exit
+2023/07/24 15:26:47 [notice] 21#21: exit
+2023/07/24 15:26:47 [notice] 22#22: exit
+2023/07/24 15:26:47 [notice] 24#24: exit
+2023/07/24 15:26:47 [notice] 23#23: exit
+2023/07/24 15:26:47 [notice] 26#26: exit
+2023/07/24 15:26:47 [notice] 25#25: exit
+2023/07/24 15:26:47 [notice] 27#27: exit
+2023/07/24 15:26:47 [notice] 28#28: exit
+2023/07/24 15:26:47 [notice] 29#29: exit
+2023/07/24 15:26:47 [notice] 31#31: exit
+2023/07/24 15:26:47 [notice] 30#30: exit
+2023/07/24 15:26:47 [notice] 32#32: exit
+2023/07/24 15:26:47 [notice] 33#33: exit
+2023/07/24 15:26:47 [notice] 34#34: exit
+2023/07/24 15:26:47 [notice] 35#35: exit
+2023/07/24 15:26:47 [notice] 36#36: exit
+2023/07/24 15:26:47 [notice] 37#37: exit
+2023/07/24 15:26:47 [notice] 39#39: exit
+2023/07/24 15:26:47 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/07/24 15:26:47 [notice] 1#1: worker process 20 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 21 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 22 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 28 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 31 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:26:47 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/07/24 15:26:47 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/07/24 15:26:47 [notice] 1#1: worker process 23 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 27 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 29 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 34 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 38 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:26:47 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/07/24 15:26:47 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2023/07/24 15:26:47 [notice] 1#1: worker process 24 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 25 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 26 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 30 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 32 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 33 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 35 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 36 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 37 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: worker process 39 exited with code 0
+2023/07/24 15:26:47 [notice] 1#1: exit
+2023/07/24 15:26:48 [notice] 1#1: using the "epoll" event method
+2023/07/24 15:26:48 [notice] 1#1: nginx/1.25.1
+2023/07/24 15:26:48 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/07/24 15:26:48 [notice] 1#1: OS: Linux 5.10.102.1-microsoft-standard-WSL2
+2023/07/24 15:26:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/07/24 15:26:48 [notice] 1#1: start worker processes
+2023/07/24 15:26:48 [notice] 1#1: start worker process 20
+2023/07/24 15:26:48 [notice] 1#1: start worker process 21
+2023/07/24 15:26:48 [notice] 1#1: start worker process 22
+2023/07/24 15:26:48 [notice] 1#1: start worker process 23
+2023/07/24 15:26:48 [notice] 1#1: start worker process 24
+2023/07/24 15:26:48 [notice] 1#1: start worker process 25
+2023/07/24 15:26:48 [notice] 1#1: start worker process 26
+2023/07/24 15:26:48 [notice] 1#1: start worker process 27
+2023/07/24 15:26:48 [notice] 1#1: start worker process 28
+2023/07/24 15:26:48 [notice] 1#1: start worker process 29
+2023/07/24 15:26:48 [notice] 1#1: start worker process 30
+2023/07/24 15:26:48 [notice] 1#1: start worker process 31
+2023/07/24 15:26:48 [notice] 1#1: start worker process 32
+2023/07/24 15:26:48 [notice] 1#1: start worker process 33
+2023/07/24 15:26:48 [notice] 1#1: start worker process 34
+2023/07/24 15:26:48 [notice] 1#1: start worker process 35
+2023/07/24 15:26:48 [notice] 1#1: start worker process 36
+2023/07/24 15:26:48 [notice] 1#1: start worker process 37
+2023/07/24 15:26:48 [notice] 1#1: start worker process 38
+2023/07/24 15:26:48 [notice] 1#1: start worker process 39
+2023/07/24 15:26:53 [error] 20#20: *1 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:53 [error] 21#21: *2 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:53 [error] 21#21: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:53 [error] 21#21: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:54 [error] 21#21: *2 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:54 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:54 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:55 [error] 22#22: *5 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:55 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:55 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:55 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:56 [error] 22#22: *5 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:56 [error] 20#20: *1 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:56 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:56 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:57 [error] 22#22: *5 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:57 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:57 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:57 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:58 [error] 22#22: *5 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:58 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:58 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:58 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:59 [error] 22#22: *5 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:26:59 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:03 [error] 22#22: *5 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:03 [error] 20#20: *1 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:03 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:03 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:13 [error] 22#22: *5 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:13 [error] 20#20: *1 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:13 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:13 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:14 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:14 [error] 22#22: *5 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:14 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:14 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:15 [error] 22#22: *5 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:15 [error] 20#20: *1 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:15 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:15 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:16 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:16 [error] 22#22: *5 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:16 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:16 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:17 [error] 22#22: *5 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:17 [error] 20#20: *1 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:17 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:17 [error] 22#22: *5 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:17 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:17 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:17 [error] 22#22: *5 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.20.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:27:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/07/24 15:27:47 [notice] 20#20: gracefully shutting down
+2023/07/24 15:27:47 [notice] 21#21: gracefully shutting down
+2023/07/24 15:27:47 [notice] 22#22: gracefully shutting down
+2023/07/24 15:27:47 [notice] 23#23: gracefully shutting down
+2023/07/24 15:27:47 [notice] 25#25: gracefully shutting down
+2023/07/24 15:27:47 [notice] 26#26: gracefully shutting down
+2023/07/24 15:27:47 [notice] 27#27: gracefully shutting down
+2023/07/24 15:27:47 [notice] 28#28: gracefully shutting down
+2023/07/24 15:27:47 [notice] 29#29: gracefully shutting down
+2023/07/24 15:27:47 [notice] 24#24: gracefully shutting down
+2023/07/24 15:27:47 [notice] 30#30: gracefully shutting down
+2023/07/24 15:27:47 [notice] 31#31: gracefully shutting down
+2023/07/24 15:27:47 [notice] 32#32: gracefully shutting down
+2023/07/24 15:27:47 [notice] 33#33: gracefully shutting down
+2023/07/24 15:27:47 [notice] 34#34: gracefully shutting down
+2023/07/24 15:27:47 [notice] 35#35: gracefully shutting down
+2023/07/24 15:27:47 [notice] 36#36: gracefully shutting down
+2023/07/24 15:27:47 [notice] 37#37: gracefully shutting down
+2023/07/24 15:27:47 [notice] 39#39: gracefully shutting down
+2023/07/24 15:27:47 [notice] 38#38: gracefully shutting down
+2023/07/24 15:27:47 [notice] 20#20: exiting
+2023/07/24 15:27:47 [notice] 21#21: exiting
+2023/07/24 15:27:47 [notice] 22#22: exiting
+2023/07/24 15:27:47 [notice] 23#23: exiting
+2023/07/24 15:27:47 [notice] 25#25: exiting
+2023/07/24 15:27:47 [notice] 26#26: exiting
+2023/07/24 15:27:47 [notice] 27#27: exiting
+2023/07/24 15:27:47 [notice] 28#28: exiting
+2023/07/24 15:27:47 [notice] 29#29: exiting
+2023/07/24 15:27:47 [notice] 24#24: exiting
+2023/07/24 15:27:47 [notice] 30#30: exiting
+2023/07/24 15:27:47 [notice] 31#31: exiting
+2023/07/24 15:27:47 [notice] 32#32: exiting
+2023/07/24 15:27:47 [notice] 33#33: exiting
+2023/07/24 15:27:47 [notice] 34#34: exiting
+2023/07/24 15:27:47 [notice] 35#35: exiting
+2023/07/24 15:27:47 [notice] 36#36: exiting
+2023/07/24 15:27:47 [notice] 37#37: exiting
+2023/07/24 15:27:47 [notice] 39#39: exiting
+2023/07/24 15:27:47 [notice] 38#38: exiting
+2023/07/24 15:27:47 [notice] 20#20: exit
+2023/07/24 15:27:47 [notice] 21#21: exit
+2023/07/24 15:27:47 [notice] 22#22: exit
+2023/07/24 15:27:47 [notice] 23#23: exit
+2023/07/24 15:27:47 [notice] 25#25: exit
+2023/07/24 15:27:47 [notice] 26#26: exit
+2023/07/24 15:27:47 [notice] 27#27: exit
+2023/07/24 15:27:47 [notice] 28#28: exit
+2023/07/24 15:27:47 [notice] 29#29: exit
+2023/07/24 15:27:47 [notice] 24#24: exit
+2023/07/24 15:27:47 [notice] 30#30: exit
+2023/07/24 15:27:47 [notice] 31#31: exit
+2023/07/24 15:27:47 [notice] 32#32: exit
+2023/07/24 15:27:47 [notice] 33#33: exit
+2023/07/24 15:27:47 [notice] 34#34: exit
+2023/07/24 15:27:47 [notice] 35#35: exit
+2023/07/24 15:27:47 [notice] 36#36: exit
+2023/07/24 15:27:47 [notice] 37#37: exit
+2023/07/24 15:27:47 [notice] 39#39: exit
+2023/07/24 15:27:47 [notice] 38#38: exit
+2023/07/24 15:27:47 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/07/24 15:27:47 [notice] 1#1: worker process 23 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 25 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 26 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 30 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 33 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 34 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 39 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:27:47 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/07/24 15:27:47 [notice] 1#1: worker process 20 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 28 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 29 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 37 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:27:47 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/07/24 15:27:47 [notice] 1#1: worker process 21 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 27 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 31 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:27:47 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/07/24 15:27:47 [notice] 1#1: worker process 22 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 24 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 35 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: worker process 38 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:27:47 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/07/24 15:27:47 [notice] 1#1: worker process 32 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:27:47 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2023/07/24 15:27:47 [notice] 1#1: worker process 36 exited with code 0
+2023/07/24 15:27:47 [notice] 1#1: exit
+2023/07/24 15:33:36 [notice] 1#1: using the "epoll" event method
+2023/07/24 15:33:36 [notice] 1#1: nginx/1.25.1
+2023/07/24 15:33:36 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/07/24 15:33:36 [notice] 1#1: OS: Linux 5.10.102.1-microsoft-standard-WSL2
+2023/07/24 15:33:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/07/24 15:33:36 [notice] 1#1: start worker processes
+2023/07/24 15:33:36 [notice] 1#1: start worker process 20
+2023/07/24 15:33:36 [notice] 1#1: start worker process 21
+2023/07/24 15:33:36 [notice] 1#1: start worker process 22
+2023/07/24 15:33:36 [notice] 1#1: start worker process 23
+2023/07/24 15:33:36 [notice] 1#1: start worker process 24
+2023/07/24 15:33:36 [notice] 1#1: start worker process 25
+2023/07/24 15:33:36 [notice] 1#1: start worker process 26
+2023/07/24 15:33:36 [notice] 1#1: start worker process 27
+2023/07/24 15:33:36 [notice] 1#1: start worker process 28
+2023/07/24 15:33:36 [notice] 1#1: start worker process 29
+2023/07/24 15:33:36 [notice] 1#1: start worker process 30
+2023/07/24 15:33:36 [notice] 1#1: start worker process 31
+2023/07/24 15:33:36 [notice] 1#1: start worker process 32
+2023/07/24 15:33:36 [notice] 1#1: start worker process 33
+2023/07/24 15:33:36 [notice] 1#1: start worker process 34
+2023/07/24 15:33:36 [notice] 1#1: start worker process 35
+2023/07/24 15:33:36 [notice] 1#1: start worker process 36
+2023/07/24 15:33:36 [notice] 1#1: start worker process 37
+2023/07/24 15:33:36 [notice] 1#1: start worker process 38
+2023/07/24 15:33:36 [notice] 1#1: start worker process 39
+2023/07/24 15:33:41 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:41 [error] 20#20: *2 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:41 [error] 20#20: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:41 [error] 20#20: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:43 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:43 [error] 20#20: *2 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:43 [error] 20#20: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:43 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:44 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:44 [error] 20#20: *2 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:44 [error] 20#20: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:44 [error] 20#20: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:45 [error] 20#20: *1 open() "/home/app/web/staticfiles/home-page.css" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/home-page.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:45 [error] 20#20: *2 open() "/home/app/web/staticfiles/base.css" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/base.css HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:45 [error] 20#20: *1 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:33:45 [error] 20#20: *2 open() "/home/app/web/staticfiles/images/default-user.png" failed (2: No such file or directory), client: 172.22.0.1, server: pictopia.com, request: "GET /static/images/default-user.png HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/"
+2023/07/24 15:35:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/07/24 15:35:47 [notice] 21#21: gracefully shutting down
+2023/07/24 15:35:47 [notice] 30#30: gracefully shutting down
+2023/07/24 15:35:47 [notice] 20#20: gracefully shutting down
+2023/07/24 15:35:47 [notice] 22#22: gracefully shutting down
+2023/07/24 15:35:47 [notice] 24#24: gracefully shutting down
+2023/07/24 15:35:47 [notice] 23#23: gracefully shutting down
+2023/07/24 15:35:47 [notice] 25#25: gracefully shutting down
+2023/07/24 15:35:47 [notice] 27#27: gracefully shutting down
+2023/07/24 15:35:47 [notice] 26#26: gracefully shutting down
+2023/07/24 15:35:47 [notice] 28#28: gracefully shutting down
+2023/07/24 15:35:47 [notice] 29#29: gracefully shutting down
+2023/07/24 15:35:47 [notice] 31#31: gracefully shutting down
+2023/07/24 15:35:47 [notice] 32#32: gracefully shutting down
+2023/07/24 15:35:47 [notice] 33#33: gracefully shutting down
+2023/07/24 15:35:47 [notice] 34#34: gracefully shutting down
+2023/07/24 15:35:47 [notice] 35#35: gracefully shutting down
+2023/07/24 15:35:47 [notice] 36#36: gracefully shutting down
+2023/07/24 15:35:47 [notice] 21#21: exiting
+2023/07/24 15:35:47 [notice] 37#37: gracefully shutting down
+2023/07/24 15:35:47 [notice] 38#38: gracefully shutting down
+2023/07/24 15:35:47 [notice] 39#39: gracefully shutting down
+2023/07/24 15:35:47 [notice] 30#30: exiting
+2023/07/24 15:35:47 [notice] 20#20: exiting
+2023/07/24 15:35:47 [notice] 22#22: exiting
+2023/07/24 15:35:47 [notice] 24#24: exiting
+2023/07/24 15:35:47 [notice] 23#23: exiting
+2023/07/24 15:35:47 [notice] 25#25: exiting
+2023/07/24 15:35:47 [notice] 27#27: exiting
+2023/07/24 15:35:47 [notice] 26#26: exiting
+2023/07/24 15:35:47 [notice] 27#27: exit
+2023/07/24 15:35:47 [notice] 28#28: exiting
+2023/07/24 15:35:47 [notice] 29#29: exiting
+2023/07/24 15:35:47 [notice] 31#31: exiting
+2023/07/24 15:35:47 [notice] 32#32: exiting
+2023/07/24 15:35:47 [notice] 33#33: exiting
+2023/07/24 15:35:47 [notice] 34#34: exiting
+2023/07/24 15:35:47 [notice] 35#35: exiting
+2023/07/24 15:35:47 [notice] 36#36: exiting
+2023/07/24 15:35:47 [notice] 21#21: exit
+2023/07/24 15:35:47 [notice] 37#37: exiting
+2023/07/24 15:35:47 [notice] 38#38: exiting
+2023/07/24 15:35:47 [notice] 39#39: exiting
+2023/07/24 15:35:47 [notice] 30#30: exit
+2023/07/24 15:35:47 [notice] 20#20: exit
+2023/07/24 15:35:47 [notice] 22#22: exit
+2023/07/24 15:35:47 [notice] 24#24: exit
+2023/07/24 15:35:47 [notice] 23#23: exit
+2023/07/24 15:35:47 [notice] 25#25: exit
+2023/07/24 15:35:47 [notice] 26#26: exit
+2023/07/24 15:35:47 [notice] 28#28: exit
+2023/07/24 15:35:47 [notice] 29#29: exit
+2023/07/24 15:35:47 [notice] 31#31: exit
+2023/07/24 15:35:47 [notice] 32#32: exit
+2023/07/24 15:35:47 [notice] 33#33: exit
+2023/07/24 15:35:47 [notice] 34#34: exit
+2023/07/24 15:35:47 [notice] 35#35: exit
+2023/07/24 15:35:47 [notice] 36#36: exit
+2023/07/24 15:35:47 [notice] 37#37: exit
+2023/07/24 15:35:47 [notice] 38#38: exit
+2023/07/24 15:35:47 [notice] 39#39: exit
+2023/07/24 15:35:47 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/07/24 15:35:47 [notice] 1#1: worker process 20 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 24 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 25 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 29 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 31 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 32 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 35 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 36 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 38 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:35:47 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/07/24 15:35:47 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2023/07/24 15:35:47 [notice] 1#1: worker process 37 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: signal 29 (SIGIO) received
+2023/07/24 15:35:47 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/07/24 15:35:47 [notice] 1#1: worker process 21 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 22 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 23 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 26 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 27 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 28 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 30 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 33 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 34 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: worker process 39 exited with code 0
+2023/07/24 15:35:47 [notice] 1#1: exit
+2023/07/24 15:36:30 [notice] 1#1: using the "epoll" event method
+2023/07/24 15:36:30 [notice] 1#1: nginx/1.25.1
+2023/07/24 15:36:30 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/07/24 15:36:30 [notice] 1#1: OS: Linux 5.10.102.1-microsoft-standard-WSL2
+2023/07/24 15:36:30 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/07/24 15:36:30 [notice] 1#1: start worker processes
+2023/07/24 15:36:30 [notice] 1#1: start worker process 20
+2023/07/24 15:36:30 [notice] 1#1: start worker process 21
+2023/07/24 15:36:30 [notice] 1#1: start worker process 22
+2023/07/24 15:36:30 [notice] 1#1: start worker process 23
+2023/07/24 15:36:30 [notice] 1#1: start worker process 24
+2023/07/24 15:36:30 [notice] 1#1: start worker process 25
+2023/07/24 15:36:30 [notice] 1#1: start worker process 26
+2023/07/24 15:36:30 [notice] 1#1: start worker process 27
+2023/07/24 15:36:30 [notice] 1#1: start worker process 28
+2023/07/24 15:36:30 [notice] 1#1: start worker process 29
+2023/07/24 15:36:30 [notice] 1#1: start worker process 30
+2023/07/24 15:36:30 [notice] 1#1: start worker process 31
+2023/07/24 15:36:30 [notice] 1#1: start worker process 32
+2023/07/24 15:36:30 [notice] 1#1: start worker process 33
+2023/07/24 15:36:30 [notice] 1#1: start worker process 34
+2023/07/24 15:36:30 [notice] 1#1: start worker process 35
+2023/07/24 15:36:30 [notice] 1#1: start worker process 36
+2023/07/24 15:36:30 [notice] 1#1: start worker process 37
+2023/07/24 15:36:30 [notice] 1#1: start worker process 38
+2023/07/24 15:36:30 [notice] 1#1: start worker process 39
+2023/07/24 15:36:32 [error] 20#20: *2 open() "/home/app/web/staticfiles/static/fonts/jsMath-cmbh10.ttf" failed (2: No such file or directory), client: 172.23.0.1, server: pictopia.com, request: "GET /static/static/fonts/jsMath-cmbh10.ttf HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/static/base.css"
+2023/07/24 15:36:34 [error] 20#20: *1 open() "/home/app/web/staticfiles/static/fonts/jsMath-cmbh10.ttf" failed (2: No such file or directory), client: 172.23.0.1, server: pictopia.com, request: "GET /static/static/fonts/jsMath-cmbh10.ttf HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/static/base.css"
+2023/07/24 15:36:45 [error] 21#21: *11 open() "/home/app/web/staticfiles/static/fonts/jsMath-cmbh10.ttf" failed (2: No such file or directory), client: 172.23.0.1, server: pictopia.com, request: "GET /static/static/fonts/jsMath-cmbh10.ttf HTTP/1.1", host: "pictopia.com", referrer: "http://pictopia.com/static/base.css"
